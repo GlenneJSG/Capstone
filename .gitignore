@@ -48,6 +48,11 @@ captures/
 
 #LaTex
 *.aux
+*.fdb_latexmk
+*.fls
+*synctex.gz
+
+
 # Google Services (e.g. APIs or Firebase)
 google-services.json
 
