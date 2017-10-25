@@ -1,6 +1,0 @@
-PWD /Users/glennegrossman/Capstone/Documentation/Meetings
-INPUT /usr/local/texlive/2017/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2017/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT meeting1.tex
-OUTPUT meeting1.log
