@@ -1,0 +1,29 @@
+The software system we are designing will function as a The main user of the system will be paramedics. In the future, we hope users will extend to all levels of the medical profession as well as the general public.
+
+We will design an application targeted at paramedics that works on both ios and android phones. The app will have a loading screen, a login page, a home page, patient pages accessed by health cards.
+
+Technology
+Node.js
+-	database
+React Native
+-app development
+Expo
+-	other stuff development
+
+
+Naming Conventions and Terminology
+
+-	Login Screen
+k
+-	Home Screen
+-	Patient Page
+-	Vitals View
+
+
+Requirements Specifications
+Functional
+
+Non-Functional
+Break them down
+
+ 

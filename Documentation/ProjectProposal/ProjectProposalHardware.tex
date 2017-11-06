@@ -1,29 +1,14 @@
-\documentclass{article}
 
-\usepackage{booktabs}
-\usepackage{tabularx}
-
-\title{Hardware Design Proposal}
-
-
-\begin{document}
-
-\newpage
-
-\maketitle
 \section{Hardware Design Component}
 
-To adequately track the vitals of a patient, there are 3 main hardware components required; the receiver, the transmitter and the sensor. 
+To adequately track the vitals of a patient, there are 3 main hardware components required; the receiver, the transmitter and the sensor.
 
 \subsection{Receiver}
-In modern society all mobile devices such as tablets and mobile phones, can connect to auxiliary devices via Bluetooth and Wi-Fi. Bluetooth communication has limitations on how many auxiliary devices can be connected to a parent device at any given time. The ideal number is 4 with the absolute maximum being 6 or 7. [1] As mass car accident can have anywhere from 3 to 15 people involved, having any paramedic limited to 4 patients per device seems impractical. Conversely, using a device as a wireless hotspot or having all devices on the same Wi-Fi network allows for 10 or up to 250 devices to be connected, respectively. [2] Because of this we have chosen to connect to our sensors through Wi-Fi with the receiver being the devices own internal Wifi receiver. 
+In modern society all mobile devices such as tablets and mobile phones, can connect to auxiliary devices via Bluetooth and Wi-Fi. Bluetooth communication has limitations on how many auxiliary devices can be connected to a parent device at any given time. The ideal number is 4 with the absolute maximum being 6 or 7. [1] As mass car accident can have anywhere from 3 to 15 people involved, having any paramedic limited to 4 patients per device seems impractical. Conversely, using a device as a wireless hotspot or having all devices on the same Wi-Fi network allows for 10 or up to 250 devices to be connected, respectively. [2] Because of this we have chosen to connect to our sensors through Wi-Fi with the receiver being the devices own internal Wifi receiver.
 
 \subsection{Transmitter}
-To transmit the data from the sensor to the mobile device, a serial WiFi transceiver module. Once the drivers are installed and the device is connected to the wireless network, the sensor will be able to connect with any device on the same network. 
+To transmit the data from the sensor to the mobile device, a serial WiFi transceiver module. Once the drivers are installed and the device is connected to the wireless network, the sensor will be able to connect with any device on the same network.
 
 \subsection{Sensor}
-Lastly, and most importantly, is the construction of the sensor itself. For the sake of this design, the sensor will only monitor the patients heart rate. A simple heart rate sensor consisting of an infrared emitter and receiver as well as an amplification circuit will be attached to the patient’s skin to generate a signal. The IR light is shone into the skin and depending on the amount of blood in the skin at that time, the light will scatter accordingly. If enough IR light is reflected, the receiver picks this up and output the corresponding current and voltage. This is then amplified and is sent to a microcontroller. 
-To decrease the size of the overall sensor, an ATmega microcontroller can be used with the appropriate capacitors, oscillators, and power source to avoid the use of a full Arduino board. This chip will receive signals in from the pulse sensing circuit and will then output the signals through the Wi-Fi Transceiver module to the user’s mobile device. 
-
-
-\end{document}
+Lastly, and most importantly, is the construction of the sensor itself. For the sake of this design, the sensor will only monitor the patients heart rate. A simple heart rate sensor consisting of an infrared emitter and receiver as well as an amplification circuit will be attached to the patient’s skin to generate a signal. The IR light is shone into the skin and depending on the amount of blood in the skin at that time, the light will scatter accordingly. If enough IR light is reflected, the receiver picks this up and output the corresponding current and voltage. This is then amplified and is sent to a microcontroller.
+To decrease the size of the overall sensor, an ATmega microcontroller can be used with the appropriate capacitors, oscillators, and power source to avoid the use of a full Arduino board. This chip will receive signals in from the pulse sensing circuit and will then output the signals through the Wi-Fi Transceiver module to the user’s mobile device.
