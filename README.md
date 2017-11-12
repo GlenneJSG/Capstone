@@ -1,11 +1,14 @@
 # Capstone
-Capstone for 4BI6 - Name will change
 
-Project Name
+Parachute
 
-Team Name: ?
 
-Team Members: Taylor de Vet, Glenne Grossman, Jamal Habash, Cameron Nowikow
+# Team Members
+
+Taylor de Vet
+Glenne Grossman
+Jamal Habash
+Cameron Nowikow
 
 
 
