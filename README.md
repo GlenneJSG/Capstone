@@ -1,3 +1,5 @@
+![Parachute](https://github.com/GlenneJSG/Capstone/blob/master/23546864_1905368672813554_167737535_o-2.png)
+
 # Capstone
 
 Parachute
