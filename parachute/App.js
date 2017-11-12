@@ -10,10 +10,7 @@ import {
 
 //array of images
 const Images = [
-    {
-        require('./images/user_group_man_woman.png'),
-        label: "Cat on a blue blanket"
-    },
+    
 
     {
         uri: "https://i.imgur.com/XCRnNWn.jpg",
