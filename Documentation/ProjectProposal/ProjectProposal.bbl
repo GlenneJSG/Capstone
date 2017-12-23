@@ -30,4 +30,10 @@
 \bibitem{Street2014}
 ``{Ontario Ehealth Blueprint},'' 2014.
 
+\bibitem{b1}
+\BIBentryALTinterwordspacing
+``{eHealth Blueprint}.'' [Online]. Available:
+  \url{http://www.ehealthblueprint.com/en/}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
