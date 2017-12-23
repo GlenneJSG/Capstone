@@ -2,7 +2,6 @@ This is BibTeX, Version 0.99d (TeX Live 2017)
 Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
 The top-level auxiliary file: ProjectProposal.aux
 The style file: IEEEtran.bst
-I found no \citation commands---while reading file ProjectProposal.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
@@ -13,47 +12,49 @@ Database file #2: ./MyCollection.bib.bib
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty author in Street2014
+Warning--empty journal in Street2014
 
 Done.
-You've used 0 entries,
+You've used 2 entries,
             4087 wiz_defined-function locations,
-            1344 strings with 17636 characters,
-and the built_in function-call counts, 104 in all, are:
-= -- 0
-> -- 0
+            1351 strings with 17802 characters,
+and the built_in function-call counts, 638 in all, are:
+= -- 32
+> -- 2
 < -- 0
-+ -- 0
++ -- 2
 - -- 0
-* -- 19
-:= -- 27
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+* -- 40
+:= -- 116
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 2
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
+cite$ -- 4
+duplicate$ -- 55
+empty$ -- 63
 format.name$ -- 0
-if$ -- 3
+if$ -- 120
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 23
+int.to.str$ -- 2
+missing$ -- 10
+newline$ -- 31
 num.names$ -- 0
-pop$ -- 0
+pop$ -- 39
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 1
+skip$ -- 40
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 2
+swap$ -- 21
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 0
-warning$ -- 0
+type$ -- 2
+warning$ -- 2
 while$ -- 0
-width$ -- 0
-write$ -- 22
-(There was 1 error message)
+width$ -- 3
+write$ -- 36
+(There were 2 warnings)
