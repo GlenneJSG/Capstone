@@ -5,8 +5,8 @@
 \contentsline {subsection}{\numberline {3.2}Functional Design}{3}
 \contentsline {subsection}{\numberline {3.3}Non-Functional Design}{4}
 \contentsline {section}{\numberline {4}Hardware Design Component}{4}
-\contentsline {subsection}{\numberline {4.1}Receiver}{4}
-\contentsline {subsection}{\numberline {4.2}Transmitter}{5}
-\contentsline {subsection}{\numberline {4.3}Sensor}{5}
+\contentsline {subsection}{\numberline {4.1}Sensor}{4}
+\contentsline {subsection}{\numberline {4.2}Receiver}{5}
+\contentsline {subsection}{\numberline {4.3}Transmitter}{5}
 \contentsline {section}{\numberline {5}Conclusion}{5}
 \contentsline {section}{References}{6}
