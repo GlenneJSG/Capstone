@@ -12,7 +12,7 @@ In regards to application software, we will use the React Native Javascript fram
 
 There are a number of requirements the app is expected to meet in order to be useful to an EFR. Most importantly, the app should be compatible with the planned protocols and standards outlined in Ontario's eHealth blueprint, allowing it to be used in the future. These protocols include the HIAL and Health Level 7, an international standard for the exchange and handeling of medical information.
 
-From a user perspective, the app will require a secure log-in for paramedics, a health card scanning system and screens to display and annotate electronic health record information. An wireframe of a basic app prototype can be seen in figure~\ref{fig:app1} .
+From a user perspective, the app will require a secure log-in for paramedics, a health card scanning system and screens to display and annotate electronic health record information. Additionally, it will need the ability to connect to a vitals-monitoring hardware device. An basic prototype of the app can be seen in figure~\ref{fig:app1}.
 
 \begin{figure}[h]
   \centering
@@ -22,26 +22,22 @@ From a user perspective, the app will require a secure log-in for paramedics, a 
   \label{fig:app1}
 \end{figure}
 
+As seen above, if a paramedic is using the app, they will be required to enter in a username and password, which will then bring them to a screen with access to the camera, call history, and settings. Accessing a record will require them to scan a health-card using the camera, or to enter the ID information manually. This will then bring them to the patients EMR, with information organized based on importance. The importance of information, and order in which it is presented will be determined in the future, most likely by discussing the app with EMRs. While responding to a call, the EMR will also have the ability to pair the app with a vitals tracker, logging important vitals information. This vitals information can be viewed in real-time, and stored for later use. If one or more patient's are present on the app the EMR will be able to see them all through different views and screens. The history screen will simply show what patients the paramedic has treated but will not allow the paramedic more access to their information once the paramedic has closed the patient's EHR.
 
-Functionally, it will need to have a secure log-in screen for paramedics. A home screen with buttons leading to history, settings, option to connect to WiFi hardware device, and the health card scanner.
+\iffalse
 
-Once a hardware device or a health card are connected it will then need to bring up a patient page and show the sensor data and/or the patients EHR. The history screen for the basic requirements will simply show what patients the paramedic has treated but will not allow the paramedic more access to their information once the paramedic has closed the patient's EHR.
+
+The app's directory is laid out with different folders that depend on each other in different ways. The folders being screens, components, index, config and lib as seen in the hierarchy. The screens folder contains the layout of each different screen (ie. homepage, history, patient page), which are built using components from the components folder (button, title etc.). The index folder contains the locations of each of the screens and acts as a navigator. Lib contains a library of functions for collecting and fetching data. Config contains accesses index and creates each new page using screens and index.
+
+
+
 
 In future versions the paramedic will be able to record information about the particular visit into the EHR, and will be able to view these additions on the history screen. In the future additions, the sensed data will also be stored and be visible in the EHR so medical personnel at a hospital or later at a doctor's visit will be able to view the patients vitals at the time of the paramedics visit.
 
 
 
+\fi
 
-
-
-
-The app will consist of a login screen where paramedics will be able to enter their username and password. Upon entering a correct password the paramedics will be brought to a screen that has buttons allowing them to access the camera, history, and settings which will all click into their own screens. 
-
-If they enter into the camera they will be able to scan a health card to enter it into that patient's page.
-
-Here it will show the patients EMR, with information laid out in the order that the paremedic's deem most helpful, we have discussed this with them and will do a survey on the layout in the final product. The patient page will also have a spot to touch to add in a vitals tracker and/or another patient. When vitals are added they pop-up in a mini view on the patient page with the EMR which you can then click on to make them larger. If one or more patient's are present on the app the paramedics will be able to see them all in mini-version on the same group-page or click in to see each one individually.  
-
-The app's directory is laid out with different folders that depend on each other in different ways. The folders being screens, components, index, config and lib as seen in the hierarchy. The screens folder contains the layout of each different screen (ie. homepage, history, patient page), which are built using components from the components folder (button, title etc.). The index folder contains the locations of each of the screens and acts as a navigator. Lib contains a library of functions for collecting and fetching data. Config contains accesses index and creates each new page using screens and index.
 
 
 
