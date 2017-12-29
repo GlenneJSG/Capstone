@@ -1,12 +1,12 @@
 \contentsline {section}{\numberline {1}Introduction}{1}
-\contentsline {section}{\numberline {2}Background}{2}
-\contentsline {section}{\numberline {3}Software Design Component}{3}
-\contentsline {subsection}{\numberline {3.1}Technology}{3}
-\contentsline {subsection}{\numberline {3.2}Functional Design}{3}
-\contentsline {subsection}{\numberline {3.3}Non-Functional Design}{4}
-\contentsline {section}{\numberline {4}Hardware Design Component}{4}
-\contentsline {subsection}{\numberline {4.1}Sensor}{4}
-\contentsline {subsection}{\numberline {4.2}Receiver}{5}
-\contentsline {subsection}{\numberline {4.3}Transmitter}{5}
-\contentsline {section}{\numberline {5}Conclusion}{5}
-\contentsline {section}{References}{6}
+\contentsline {section}{\numberline {2}Background}{1}
+\contentsline {section}{\numberline {3}Software Design Component}{4}
+\contentsline {subsection}{\numberline {3.1}Technology}{4}
+\contentsline {subsection}{\numberline {3.2}Functional Design}{4}
+\contentsline {subsection}{\numberline {3.3}Non-Functional Design}{5}
+\contentsline {section}{\numberline {4}Hardware Design Component}{5}
+\contentsline {subsection}{\numberline {4.1}Sensor}{5}
+\contentsline {subsection}{\numberline {4.2}Receiver}{6}
+\contentsline {subsection}{\numberline {4.3}Transmitter}{6}
+\contentsline {section}{\numberline {5}Conclusion}{6}
+\contentsline {section}{References}{7}
