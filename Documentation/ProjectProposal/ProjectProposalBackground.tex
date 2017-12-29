@@ -32,59 +32,8 @@ Matt went on to explain how there are several different documenting systems used
   \label{fig:iMed1}
 \end{figure}
 
-
-
-\iffalse
-
-Throughout Ontario, there is a clear desire to bring healthcare into digital age by using software to improve access to medical information. The Ontario government has outlined the direction Ontario's digital health infrastructure will take in the future, employing a "service-oriented architecture" to distribute medical information.  The province intends to provide patients and healthcare professionals with information through a comprehensive and secure electronic health record stored on (central servers), and accessed through dedicated information portals. Information provided to professionals will be specific to the care they offer, ensuring a patients medical history is distilled into its most relevant components.
-
-
-future electronic health records and consuming systems.
-
- using a set of protocols and rules to govern
-
-
-, allowing components to be developed independently of each other.
-
-
-
-
-
-
-Before developing a database, and the app to access the database, we first need to determine what relevant information we would need to be stored in the database. Currently there are 2-3 different documenting systems in use in Ontario. So no unfortunately it's not standardized, that being said, neither is the hospital retrieval software, so an external device and software would help to standardize at least the ohip card aspect of retrieval.
-We are creating the system based off the fact that we have acquired all the information, so we are focusing on the storing and displaying of the data, rather than the acquisition of it. Therefore, we need to decide how to effectively display and store the data.
-
-
-
-
-ato provide patients and healthcare professionals with information relevant to them \cite{b1}. Specifically, a comprehensive and secure electronic health record will be distributed to dedicated information portals using a standard health information access layer (HIAL) protocol  stored on (central servers), and accessed through dedicated information portals. Information provided to professionals will be specific to the care they offer, ensuring a patients medical history is distilled into its most relevant components.
-
-
-With our objectives in mind, we have talked to a number of paramedics about our project, and their response was overwhelmingly positive. There is general consensus among the paramedics we have talked to that medical history is vital to their job, and that any information about a patient can help them provide more appropriate care. Paramedics also expressed support for a software and hardware system that can help track patient vitals, and record any relevant information information. Our discussions with paramedics can be summarized by the following quote from paramedic Matt Sartor:
-
-\blockquote{Nursing homes carry [transfer documents] that contain updated information on [a patient] such as: medications, allergies and diagnosed disorders; including say if they [have] had a stroke, or have dementia, and what level of cognition or communication is normal for them. This kind of information gives us as paramedics a tipping point for how we assess our patients, or how we expect to communicate with them or have them do the same with us. [This information] would be very helpful for anyone we meet. Even if it's only [medication] history and allergies, we can decipher a lot from that. Even recent visits to hospital gives us a pattern of problems with a patient.
-
-Currently the hospital can scan their card and get all prior hospital visits and diagnoses on discharges, but it's not available or compact enough for [paramedics] to get. If somehow our laptop forms, which we have to manually input all information we can attain, could get the aforementioned information it would largely influence our practice.
-}
-
-When talking to a paramedic, he gave this as a response to what information would be helpful:
-Nursing homes carry a transfer document that (should) contain updated information on them such as: medications, allergies, and diagnosed disorders, including say if they had a stroke or have dementia, what level of cognition or communication is normal for them. This kind of information gives us as paramedics a tipping point for how we assess our patients or how we expect to communicate with them or have them do the same with us. That would be very helpful for anyone we meet. Even if it's only medical history and allergies, we can decipher a lot from that. Even recent visits to hospital gives us a pattern of problems with a patient. Currently the hospital can scan their card and get all prior hospital visits and diagnoses on discharges, but it's not available or compact enough for us to get. If somehow our laptop forms, which we have to manually input all information we can attain could get the aforementioned information it would largely influence our practice.
-
-\fi
-
-
-
+As discussed, there currently exists no cumulative EHR in Ontario, and we are developing software based on the assumption that in the future an EHR will exist. The software we develop will be focused on handling, storing and presenting medical information, rather than how it will be acquired.
 
 \subsection{Alternative Electronic Health Records}
 
 In 2003 the World Health Organization (WHO) released a document outlining the possibility of implementing a medical information system using “smart cards”. They described how information stored on a card could be carried by patients, that when scanned, would allow professionals to see the patients medical history \cite{smartcard1}. This method of information retrieval has the medical history being stored on the card itself, which is incompatible with Ontario's future EHR infrastructure. Instead of storing medical information, we will be using health cards to identify patients and provide authentication to access a particular medical record.
-
-
-\iffalse
-We want to design a database and use, lets say a health card, as just an ID, rather than the storage of the data itself.
-
-Before developing a database, and the app to access the database, we first need to determine what relevant information we would need to be stored in the database. Currently there are 2-3 different documenting systems in use in Ontario. So no unfortunately it's not standardized, that being said, neither is the hospital retrieval software, so an external device and software would help to standardize at least the ohip card aspect of retrieval.
-
-\fi
-
-We are creating the system based off the fact that we have acquired all the information, so we are focusing on the storing and displaying of the data, rather than the acquisition of it. Therefore, we need to decide how to effectively display and store the data.
