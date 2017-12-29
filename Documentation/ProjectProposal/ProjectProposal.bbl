@@ -36,4 +36,12 @@
   \url{http://www.ehealthblueprint.com/en/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{smartcard1}
+\BIBentryALTinterwordspacing
+N.~O. {Otto Rienhoff, Roberto J. Rodrigues, Ursula Piccolo, Antonio Hernandez},
+  ``{Integrated Circuit Health Data Cards (Smart Cards)},'' Pan American Health
+  Organization, Washington, Tech. Rep., 2003. [Online]. Available:
+  \url{http://apps.who.int/medicinedocs/documents/s16587e/s16587e.pdf}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}
