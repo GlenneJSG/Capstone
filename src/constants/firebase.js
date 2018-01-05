@@ -1,8 +1,8 @@
 export default {
-  apiKey: 'AIzaSyAHshJehJ-E_9AoUN3kfY8BLvZtFoXxFto',
-  authDomain: 'react-native-starter-app.firebaseapp.com',
-  databaseURL: 'https://react-native-starter-app.firebaseio.com',
-  projectId: 'react-native-starter-app',
-  storageBucket: 'react-native-starter-app.appspot.com',
-  messagingSenderId: '762822550667',
+  apiKey: "AIzaSyBaV6_73x0VHrkLvYwnvbTpNadhRPal14A",
+  authDomain: "parachute-191a7.firebaseapp.com",
+  databaseURL: "https://parachute-191a7.firebaseio.com",
+  projectId: "parachute-191a7",
+  storageBucket: "parachute-191a7.appspot.com",
+  messagingSenderId: "1039836428906"
 };

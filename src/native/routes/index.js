@@ -46,8 +46,8 @@ const Index = (
         </Stack>
 
         <Stack
-          key="recipes"
-          title="RECIPES"
+          key="patients"
+          title="Patients"
           icon={() => <Icon name="book" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
@@ -100,8 +100,8 @@ const Index = (
     <Scene
       back
       clone
-      key="recipe"
-      title="RECIPE"
+      key="patients"
+      title="Patients"
       {...DefaultProps.navbarProps}
       component={RecipesContainer}
       Layout={RecipeViewComponent}

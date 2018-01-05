@@ -35,8 +35,8 @@ const RecipeListing = ({ error, loading, recipes }) => {
     <div>
       <Row>
         <Col sm="12">
-          <h1>Recipes</h1>
-          <p>The following data is read directly from Firebase.</p>
+          <h1>Current Patient</h1>
+          <p>The following data is read directly from Firebase ~ eventually EHR.</p>
         </Col>
       </Row>
       <Row className={loading ? 'content-loading' : ''}>

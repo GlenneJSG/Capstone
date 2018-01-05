@@ -112,14 +112,14 @@ export default {
   cardDefaultBg: '#fff',
 
   // Color
-  brandPrimary: '#473BE7',
-  brandInfo: '#62B1F6',
-  brandSuccess: '#5cb85c',
-  brandDanger: '#d9534f',
-  brandWarning: '#f0ad4e',
+  brandPrimary: '#257985',
+  brandInfo: '#5EA8A7',
+  brandSuccess: '#7AA802',
+  brandDanger: '#FF4447',
+  brandWarning: '#F78B2D',
   brandSidebar: '#252932',
   brandDark: '#000',
-  brandLight: '#f4f4f4',
+  brandLight: '#FFFFFF',
 
   // Font
   fontFamily: platform === 'ios' ? 'System' : 'Roboto',
@@ -137,7 +137,7 @@ export default {
 
   // Footer
   footerHeight: isIphoneX ? 89 : 55,
-  footerDefaultBg: '#2874F0',
+  footerDefaultBg: '#257985',
   footerPaddingBottom: isIphoneX ? 34 : 0,
 
   // FooterTab
@@ -149,26 +149,26 @@ export default {
   tabActiveBgColor: platform === 'ios' ? '#1569f4' : undefined,
 
   // Tab
-  tabDefaultBg: '#2874F0',
+  tabDefaultBg: '#257985',
   topTabBarTextColor: '#b3c7f9',
-  topTabBarActiveTextColor: '#fff',
+  topTabBarActiveTextColor: '#ffffff',
   topTabActiveBgColor: platform === 'ios' ? '#1569f4' : undefined,
-  topTabBarBorderColor: '#fff',
-  topTabBarActiveBorderColor: '#fff',
+  topTabBarBorderColor: '#ffffff',
+  topTabBarActiveBorderColor: '#ffffff',
 
   // Header
-  toolbarBtnColor: '#fff',
-  toolbarDefaultBg: '#2874F0',
+  toolbarBtnColor: '#ffffff',
+  toolbarDefaultBg: '#257985',
   toolbarHeight: platform === 'ios' ? (isIphoneX ? 88 : 64) : 56,
   toolbarIconSize: platform === 'ios' ? 20 : 22,
   toolbarSearchIconSize: platform === 'ios' ? 20 : 23,
-  toolbarInputColor: platform === 'ios' ? '#CECDD2' : '#fff',
+  toolbarInputColor: platform === 'ios' ? '#CECDD2' : '#ffffff',
   searchBarHeight: platform === 'ios' ? 30 : 40,
   searchBarInputHeight: platform === 'ios' ? 30 : 50,
   toolbarInverseBg: '#222',
-  toolbarTextColor: '#fff',
+  toolbarTextColor: '#ffffff',
   iosStatusbar: 'light-content',
-  toolbarDefaultBorder: '#2874F0',
+  toolbarDefaultBorder: '#257985',
   get statusBarColor() {
     return color(this.toolbarDefaultBg)
       .darken(0.2)
