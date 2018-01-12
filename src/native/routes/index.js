@@ -39,25 +39,35 @@ const Index = (
         <Stack
           key="home"
           title={AppConfig.appName.toUpperCase()}
-          icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+          icon={() => <Icon name="help" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
-          <Scene key="home" component={AboutComponent} />
+          <Scene key="group" component={AboutComponent} />
         </Stack>
 
+
         <Stack
-          key="patients"
-          title="Patients"
-          icon={() => <Icon name="book" {...DefaultProps.icons} />}
+          key="banana"
+          title="banana"
+          icon={() => <Icon name="person" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
           <Scene key="recipes" component={RecipesContainer} Layout={RecipesComponent} />
         </Stack>
 
         <Stack
+          key="camera"
+          title="Camera"
+          icon={() => <Icon name="camera" {...DefaultProps.icons} />}
+          {...DefaultProps.navbarProps}
+        >
+        <Scene key="group" component={AboutComponent} />
+      </Stack>
+
+        <Stack
           key="profile"
           title="PROFILE"
-          icon={() => <Icon name="contact" {...DefaultProps.icons} />}
+          icon={() => <Icon name="person" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
           <Scene key="profileHome" component={AppContainer} Layout={ProfileComponent} />

@@ -1,7 +1,7 @@
 export default {
   // Defaults
-  default: 'Hmm, an unknown error occured',
-  timeout: 'Server Timed Out. Check your internet connection',
+  default: 'Uhoh, an unknown error occured',
+  timeout: 'Server Timed Out. Please check your internet connection',
   invalidJson: 'Response returned is not valid JSON',
 
   // Firebase Related
