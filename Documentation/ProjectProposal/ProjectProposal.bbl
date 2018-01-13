@@ -36,4 +36,19 @@
   \url{http://www.ehealthblueprint.com/en/}
 \BIBentrySTDinterwordspacing
 
+\bibitem{smartcard1}
+\BIBentryALTinterwordspacing
+N.~O. {Otto Rienhoff, Roberto J. Rodrigues, Ursula Piccolo, Antonio Hernandez},
+  ``{Integrated Circuit Health Data Cards (Smart Cards)},'' Pan American Health
+  Organization, Washington, Tech. Rep., 2003. [Online]. Available:
+  \url{http://apps.who.int/medicinedocs/documents/s16587e/s16587e.pdf}
+\BIBentrySTDinterwordspacing
+
+\bibitem{apple1}
+\BIBentryALTinterwordspacing
+{Apple Support}, ``{Using a Bluetooth mouse, keyboard, or trackpad with your
+  Mac}.'' [Online]. Available:
+  \url{https://support.apple.com/en-ca/HT201171{\#}howmany}
+\BIBentrySTDinterwordspacing
+
 \end{thebibliography}

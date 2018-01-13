@@ -16,45 +16,45 @@ Warning--empty author in Street2014
 Warning--empty journal in Street2014
 
 Done.
-You've used 3 entries,
+You've used 5 entries,
             4087 wiz_defined-function locations,
-            1354 strings with 17858 characters,
-and the built_in function-call counts, 913 in all, are:
-= -- 48
-> -- 3
+            1365 strings with 18248 characters,
+and the built_in function-call counts, 1695 in all, are:
+= -- 117
+> -- 11
 < -- 0
-+ -- 3
-- -- 0
-* -- 49
-:= -- 160
-add.period$ -- 6
-call.type$ -- 3
-change.case$ -- 3
++ -- 7
+- -- 2
+* -- 79
+:= -- 321
+add.period$ -- 10
+call.type$ -- 5
+change.case$ -- 5
 chr.to.int$ -- 0
-cite$ -- 5
-duplicate$ -- 82
-empty$ -- 96
-format.name$ -- 0
-if$ -- 181
+cite$ -- 7
+duplicate$ -- 146
+empty$ -- 163
+format.name$ -- 2
+if$ -- 347
 int.to.chr$ -- 0
-int.to.str$ -- 3
-missing$ -- 16
-newline$ -- 36
-num.names$ -- 0
-pop$ -- 63
+int.to.str$ -- 5
+missing$ -- 32
+newline$ -- 46
+num.names$ -- 2
+pop$ -- 103
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 60
+skip$ -- 120
 stack$ -- 0
-substring$ -- 3
-swap$ -- 32
+substring$ -- 5
+swap$ -- 71
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 3
+type$ -- 5
 warning$ -- 2
-while$ -- 0
-width$ -- 4
-write$ -- 44
+while$ -- 2
+width$ -- 6
+write$ -- 66
 (There were 2 warnings)
