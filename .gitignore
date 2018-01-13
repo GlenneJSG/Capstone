@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+node_modules/
+.vscode/
+.expo/
+npm-debug.*
+=======
 #Mac files
 *.DS_Store
 
@@ -63,3 +69,4 @@ google-services.json
 freeline.py
 freeline/
 freeline_project_description.json
+>>>>>>> c81f028b3df5319734307ed7dd4880b93090ecdf
