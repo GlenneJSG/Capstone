@@ -1,5 +1,9 @@
 {
   "expo": {
-    "sdkVersion": "22.0.0"
+    "sdkVersion": "22.0.0",
+    "name": "Parachute",
+    "slug": "parachute",
+    "icon": "src/images/app-icon.png",
+    "privacy": "public"
   }
 }
