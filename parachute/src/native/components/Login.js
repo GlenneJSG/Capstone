@@ -56,12 +56,11 @@ class Login extends React.Component {
       <Container>
         <Content padder>
           <Header
-            title="Welcome back"
-            content="Please use your work email and password to log-in"
+            title="Log In"
           />
 
           {error && <Messages message={error} />}
-
+/*Log in Functions*/
           <Form>
             <Item stackedLabel>
               <Label>Email</Label>

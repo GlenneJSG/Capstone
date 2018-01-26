@@ -39,8 +39,7 @@ const Profile = ({ member, logout }) => (
           <View>
             <Content padder>
               <Header
-                title="Hi there,"
-                content="Please login to gain extra access"
+                title="Sign In"
               />
             </Content>
 

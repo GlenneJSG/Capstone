@@ -28,7 +28,7 @@ const RecipeListing = ({
     <Container>
       <Content padder>
         <Header
-          title="Current Patients"
+          title="Top Recipes"
           content="This is here to show how you can read and display data from a data source (in our case, Firebase)."
         />
 
@@ -61,7 +61,7 @@ const RecipeListing = ({
                     small
                     onPress={() => onPress(item)}
                   >
-                    <Text>Enter Patient Page</Text>
+                    <Text>View Recipe</Text>
                   </Button>
                   <Spacer size={5} />
                 </Body>

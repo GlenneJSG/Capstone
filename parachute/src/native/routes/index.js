@@ -5,8 +5,8 @@ import { Icon } from 'native-base';
 import DefaultProps from '../constants/navigation';
 import AppConfig from '../../constants/config';
 
-import RecipesContainer from '../../containers/Recipes';
-import RecipesComponent from '../components/Recipes';
+import RecipeContainer from '../../containers/Recipes';
+import RecipeComponent from '../components/Recipes';
 import RecipeViewComponent from '../components/Recipe';
 
 import SignUpContainer from '../../containers/SignUp';
@@ -52,17 +52,10 @@ const Index = (
           icon={() => <Icon name="person" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
-          <Scene key="recipes" component={RecipesContainer} Layout={RecipesComponent} />
+          <Scene key="emr" component={RecipeContainer} Layout={RecipeComponent} />
         </Stack>
 
-        <Stack
-          key="camera"
-          title="Camera"
-          icon={() => <Icon name="camera" {...DefaultProps.icons} />}
-          {...DefaultProps.navbarProps}
-        >
-        <Scene key="group" component={AboutComponent} />
-      </Stack>
+
 
         <Stack
           key="profile"
@@ -110,10 +103,10 @@ const Index = (
     <Scene
       back
       clone
-      key="patients"
+      key="recipe"
       title="Patients"
       {...DefaultProps.navbarProps}
-      component={RecipesContainer}
+      component={RecipeContainer}
       Layout={RecipeViewComponent}
     />
   </Stack>

@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2017-10-27" view-index="0" gantt-divider-location="300" resource-divider-location="300" version="2.8.5" locale="en_CA">
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2018-03-03" view-index="0" gantt-divider-location="406" resource-divider-location="300" version="2.8.5" locale="en_CA">
     <description/>
     <view zooming-state="default:1" id="gantt-chart">
-        <field id="tpd3" name="Name" width="166" order="0"/>
-        <field id="tpd4" name="Begin date" width="64" order="1"/>
-        <field id="tpd5" name="End date" width="64" order="2"/>
-        <timeline><![CDATA[0]]></timeline>
-        <option id="color.recent"><![CDATA[#990099 #ff99ff #ccffcc #ccffff #00cccc]]></option>
+        <field id="tpd3" name="Name" width="201" order="0"/>
+        <field id="tpd4" name="Begin date" width="100" order="1"/>
+        <field id="tpd5" name="End date" width="99" order="2"/>
+        <timeline><![CDATA[0,61,72]]></timeline>
+        <option id="color.recent"><![CDATA[#ff4447 #5ed3db #5ea8a7 #257985 #990099 #ff99ff #ccffcc #ccffff #00cccc]]></option>
     </view>
     <view id="resource-table">
         <field id="0" name="Name" width="209" order="0"/>
@@ -35,41 +35,44 @@
             <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
-        <task id="11" name="Project Proposal Due" color="#990099" meeting="true" start="2017-11-01" duration="0" complete="0" priority="4" expand="true"/>
-        <task id="19" name="Bronze Specifications" color="#990099" meeting="true" start="2018-01-17" duration="0" complete="0" expand="true">
-            <depend id="16" type="2" difference="0" hardness="Strong"/>
+        <task id="61" name="Front-End Completion" color="#5ea8a7" meeting="false" start="2018-01-24" duration="8" complete="0" expand="false">
+            <task id="84" name="Health Card Scanning" color="#5ed3db" meeting="false" start="2018-01-24" duration="8" complete="0" expand="true"/>
         </task>
-        <task id="0" name="Bronze Specifications" color="#00cccc" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2017-10-25" duration="14" complete="0" priority="4" expand="true">
-            <depend id="31" type="2" difference="0" hardness="Strong"/>
-            <task id="1" name="Hardware" color="#ccffff" meeting="false" start="2017-10-27" duration="12" complete="0" expand="true">
-                <task id="55" name="Schematic Rev 0" color="#ff99ff" meeting="false" start="2017-11-10" duration="1" complete="0" expand="true"/>
-                <task id="56" name="Purchasing Parts" color="#ff99ff" meeting="false" start="2017-11-13" duration="1" complete="0" expand="true"/>
-                <task id="59" name="Circuit Rev 0" meeting="false" start="2017-10-27" duration="1" complete="0" expand="true"/>
+        <task id="81" name="Seperate Sections Complete" color="#ff4447" meeting="true" start="2018-02-14" duration="0" complete="0" expand="true"/>
+        <task id="70" name="Presentation" color="#ff4447" meeting="true" start="2018-01-24" duration="0" complete="0" expand="true"/>
+        <task id="72" name="Back-End Completion" color="#5ea8a7" meeting="false" start="2018-01-24" duration="15" complete="0" expand="false">
+            <task id="85" name="Health Card Authentication" color="#5ed3db" meeting="false" start="2018-02-02" duration="8" complete="0" expand="true"/>
+            <task id="91" name="Database Structure" color="#5ed3db" meeting="false" start="2018-01-24" duration="8" complete="0" expand="true"/>
+        </task>
+        <task id="73" name="Hardware Completion" color="#5ea8a7" meeting="false" start="2018-01-24" duration="15" complete="0" expand="false">
+            <task id="100" name="Hardware Integration" color="#5ed3db" meeting="false" start="2018-01-24" duration="8" complete="0" expand="true"/>
+            <task id="102" name="Hardware Testing" color="#5ed3db" meeting="false" start="2018-02-02" duration="8" complete="0" expand="true"/>
+        </task>
+        <task id="106" name="Full System" color="#257985" meeting="false" start="2018-02-14" duration="21" complete="0" expand="false">
+            <task id="107" name="Vitals" color="#5ea8a7" meeting="false" start="2018-02-14" duration="21" complete="0" expand="false">
+                <task id="108" name="Serial Communication with React" color="#5ed3db" meeting="false" start="2018-02-14" duration="12" complete="0" expand="true"/>
+                <task id="109" name="Testing" color="#5ed3db" meeting="false" start="2018-03-01" duration="10" complete="0" expand="true"/>
+                <task id="110" name="Vitals Storage/Databse Integration" color="#5ed3db" meeting="false" start="2018-02-19" duration="6" complete="0" expand="true"/>
             </task>
-            <task id="3" name="Software" color="#ccffcc" meeting="false" start="2017-10-25" duration="1" complete="0" expand="true">
-                <task id="52" name="User Interface" meeting="false" start="2017-10-25" duration="1" complete="0" expand="true"/>
-                <task id="53" name="Database" meeting="false" start="2017-10-25" duration="1" complete="0" expand="true"/>
-                <task id="54" name="Communication" meeting="false" start="2017-10-25" duration="1" complete="0" expand="true"/>
-            </task>
         </task>
-        <task id="16" name="Silver Specifications" color="#990099" meeting="true" start="2018-01-17" duration="0" complete="0" expand="true">
-            <depend id="17" type="2" difference="0" hardness="Strong"/>
-        </task>
-        <task id="31" name="Silver Specifications" color="#ff99ff" meeting="false" start="2018-01-01" duration="1" complete="0" expand="true">
-            <task id="47" name="Front End" meeting="false" start="2018-01-01" duration="1" complete="0" expand="true"/>
-        </task>
-        <task id="17" name="Gold Specifications" color="#990099" meeting="true" start="2018-01-17" duration="0" complete="0" expand="true"/>
-        <task id="46" name="Gold Specifications" meeting="false" start="2017-10-25" duration="1" complete="0" expand="true">
-            <task id="49" name="Front End" meeting="false" start="2017-10-25" duration="1" complete="0" expand="true"/>
-        </task>
+        <task id="121" name="System Testing" color="#5ea8a7" meeting="false" start="2018-02-28" duration="20" complete="0" expand="true"/>
+        <task id="129" name="Expo" color="#ff4447" meeting="true" start="2018-04-05" duration="0" complete="0" expand="true"/>
+        <task id="132" name="Poster Due Date" color="#ff4447" meeting="true" start="2018-03-22" duration="0" complete="0" expand="true"/>
     </tasks>
     <resources>
         <resource id="0" name="Taylor de Vet" function="Default:0" contacts="habashjm@mcmaster.ca" phone="9052205000"/>
         <resource id="1" name="Glenne Grossman" function="Default:0" contacts="glenne.grossman@gmail.com" phone="7056060260"/>
         <resource id="2" name="Jamal Habash" function="Default:0" contacts="habashjm@mcmaster.ca" phone="9052205000"/>
         <resource id="3" name="Cameron Nowikow" function="Default:0" contacts="" phone=""/>
+        <resource id="4" name="" function="Default:0" contacts="" phone=""/>
     </resources>
-    <allocations/>
+    <allocations>
+        <allocation task-id="73" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="61" resource-id="1" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="72" resource-id="1" function="Default:0" responsible="true" load="50.0"/>
+        <allocation task-id="73" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="85" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
     <vacations/>
     <previous/>
     <roles roleset-name="Default"/>

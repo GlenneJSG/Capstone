@@ -4,58 +4,100 @@ import {
   Row,
   Col,
   Card,
-  CardImg,
   CardText,
   CardBody,
-  CardTitle,
+  CardHeader,
+  ListGroup,
+  ListGroupItem,
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import ErrorMessages from '../../constants/errors';
+import Loading from './Loading';
 import Error from './Error';
 
-const RecipeListing = ({ error, loading, recipes }) => {
+const RecipeView = ({
+  error,
+  loading,
+  recipes,
+  recipeId,
+}) => {
+  // Loading
+  if (loading) return <Loading />;
+
   // Error
   if (error) return <Error content={error} />;
 
-  // Build Cards for Listing
-  const cards = recipes.map(item => (
-    <Card key={`${item.id}`}>
-      <Link to={`/recipe/${item.id}`}>
-        <CardImg top src={item.image} alt={item.title} />
-      </Link>
-      <CardBody>
-        <CardTitle>{item.title}</CardTitle>
-        <CardText>{item.body}</CardText>
-        <Link className="btn btn-primary" to={`/recipe/${item.id}`}>View Recipe <i className="icon-arrow-right" /></Link>
-      </CardBody>
-    </Card>
+  // Get this Recipe from all recipes
+  let recipe = null;
+  if (recipeId && recipes) {
+    recipe = recipes.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
+  }
+
+  // Recipe not found
+  if (!recipe) return <Error content={ErrorMessages.recipe404} />;
+
+  // Build Ingredients listing
+  const ingredients = recipe.ingredients.map(item => (
+    <ListGroupItem key={`${item}`}>{item}</ListGroupItem>
   ));
 
-  // Show Listing
+  // Build Method listing
+  const method = recipe.method.map(item => (
+    <ListGroupItem key={`${item}`}>{item}</ListGroupItem>
+  ));
+
   return (
     <div>
       <Row>
         <Col sm="12">
-          <h1>Current Patient</h1>
-          <p>The following data is read directly from Firebase ~ eventually EHR.</p>
+          <h1>{recipe.title}</h1>
+          <p>by {recipe.author}</p>
         </Col>
       </Row>
-      <Row className={loading ? 'content-loading' : ''}>
-        <Col sm="12" className="card-columns">
-          {cards}
+      <Row>
+        <Col lg="4" className="recipe-view-card">
+          <Card>
+            <CardHeader>About this recipe</CardHeader>
+            <CardBody>
+              <CardText>{recipe.body}</CardText>
+            </CardBody>
+          </Card>
+        </Col>
+        <Col lg="4" className="recipe-view-card">
+          <Card>
+            <CardHeader>Ingredients</CardHeader>
+            <ListGroup className="list-group-flush">
+              {ingredients}
+            </ListGroup>
+          </Card>
+        </Col>
+        <Col lg="4" className="recipe-view-card">
+          <Card>
+            <CardHeader>Method</CardHeader>
+            <ListGroup className="list-group-flush">
+              {method}
+            </ListGroup>
+          </Card>
+        </Col>
+      </Row>
+      <Row className="pb-3">
+        <Col sm="12">
+          <Link className="btn btn-secondary" to="/recipes"><i className="icon-arrow-left" /> Back</Link>
         </Col>
       </Row>
     </div>
   );
 };
 
-RecipeListing.propTypes = {
+RecipeView.propTypes = {
   error: PropTypes.string,
   loading: PropTypes.bool.isRequired,
+  recipeId: PropTypes.string.isRequired,
   recipes: PropTypes.arrayOf(PropTypes.shape()).isRequired,
 };
 
-RecipeListing.defaultProps = {
+RecipeView.defaultProps = {
   error: null,
 };
 
-export default RecipeListing;
+export default RecipeView;
