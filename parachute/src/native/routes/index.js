@@ -26,6 +26,9 @@ import ProfileComponent from '../components/Profile';
 
 import AboutComponent from '../components/About';
 
+import CameraComponent from '../components/Camera';
+import CameraContainer from '../../containers/Camera';
+
 const Index = (
   <Stack>
     <Scene hideNavBar>
@@ -57,11 +60,11 @@ const Index = (
 
         <Stack
           key="camera"
-          title="Camera"
+          title="Scan the Health Card"
           icon={() => <Icon name="camera" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
-        <Scene key="group" component={AboutComponent} />
+        <Scene key="group" component={CameraContainer} />
       </Stack>
 
         <Stack
