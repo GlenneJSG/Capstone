@@ -37,22 +37,32 @@ const Index = (
         {...DefaultProps.tabProps}
       >
         <Stack
-          key="home"
+          key="about"
           title={AppConfig.appName.toUpperCase()}
           icon={() => <Icon name="help" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
-          <Scene key="group" component={AboutComponent} />
+          <Scene key="about" component={AboutComponent} />
         </Stack>
 
-
         <Stack
-          key="banana"
-          title="banana"
+          key="home"
+          title="HOME"
           icon={() => <Icon name="person" {...DefaultProps.icons} />}
           {...DefaultProps.navbarProps}
         >
-          <Scene key="emr" component={RecipeContainer} Layout={RecipeComponent} />
+          <Scene key="home" component={RecipeContainer} Layout={RecipeComponent} />
+        </Stack>
+
+
+
+        <Stack
+          key="patientDatabase"
+          title="PATIENT DATABASE"
+          icon={() => <Icon name="person" {...DefaultProps.icons} />}
+          {...DefaultProps.navbarProps}
+        >
+          <Scene key="patientDatabase" component={RecipeContainer} Layout={RecipeComponent} />
         </Stack>
 
 

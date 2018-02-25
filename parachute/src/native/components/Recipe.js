@@ -46,7 +46,7 @@ const RecipeView = ({
         <H3>{recipe.title}</H3>
         <Text>{recipe.author}</Text>
         <Spacer size={15} />
-
+        
         <Card>
           <CardItem header bordered>
             <Text>Alerts</Text>
@@ -57,6 +57,7 @@ const RecipeView = ({
             </Body>
           </CardItem>
         </Card>
+
 
         <Card>
           <CardItem header bordered>
@@ -81,6 +82,8 @@ const RecipeView = ({
             </List>
           </CardItem>
         </Card>
+
+
 
         <Spacer size={20} />
       </Content>
