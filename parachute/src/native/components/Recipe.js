@@ -40,16 +40,16 @@ const RecipeView = ({
   return (
     <Container>
       <Content padder>
-        <Image source={{ uri: recipe.image }} style={{ height: 100, width: null, flex: 1 }} />
+        <Image source={{ uri: recipe.image }} style={{ height: 400, width: null, flex: 1 }} />
 
         <Spacer size={25} />
         <H3>{recipe.title}</H3>
-        <Text>by {recipe.author}</Text>
+        <Text>{recipe.author}</Text>
         <Spacer size={15} />
-
+        
         <Card>
           <CardItem header bordered>
-            <Text>About this recipe</Text>
+            <Text>Alerts</Text>
           </CardItem>
           <CardItem>
             <Body>
@@ -58,9 +58,10 @@ const RecipeView = ({
           </CardItem>
         </Card>
 
+
         <Card>
           <CardItem header bordered>
-            <Text>Ingredients</Text>
+            <Text>Medications</Text>
           </CardItem>
           <CardItem>
             <Content>
@@ -73,7 +74,7 @@ const RecipeView = ({
 
         <Card>
           <CardItem header bordered>
-            <Text>Method</Text>
+            <Text>Allergies</Text>
           </CardItem>
           <CardItem>
             <List>
@@ -81,6 +82,8 @@ const RecipeView = ({
             </List>
           </CardItem>
         </Card>
+
+
 
         <Spacer size={20} />
       </Content>
