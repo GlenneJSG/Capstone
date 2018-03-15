@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { StyleSheet, Text, View } from 'react-native';
 import { BarCodeScanner, Permissions } from 'expo';
-
+import {Actions} from 'react-native-router-flux'
 export default class BarcodeScannerExample extends React.Component {
   state = {
     hasCameraPermission: null,
@@ -50,7 +50,8 @@ export default class BarcodeScannerExample extends React.Component {
     f4 = data.slice(0,4);
     s3 = data.slice(4,7);
     t3 = data.slice(7,10);
-    hcn = `${f4}-${s3}-${t3}`;
-    alert(hcn);
+    hcn = `${f4}${s3}${t3}`;
+
+   Actions.recipe({ match: { params: { id: hcn } } });
   }
 }

@@ -46,7 +46,30 @@ const RecipeView = ({
         <H3>{recipe.title}</H3>
         <Text>{recipe.author}</Text>
         <Spacer size={15} />
-        
+
+
+        <Card>
+          <CardItem header bordered>
+            <Text>Health Card Number</Text>
+          </CardItem>
+          <CardItem>
+            <Body>
+              <Text>{recipe.id}</Text>
+            </Body>
+          </CardItem>
+        </Card>
+
+        <Card>
+          <CardItem header bordered>
+            <Text> Date of Birth</Text>
+          </CardItem>
+          <CardItem>
+            <Body>
+              <Text>{recipe.dobyear}</Text>
+            </Body>
+          </CardItem>
+        </Card>
+
         <Card>
           <CardItem header bordered>
             <Text>Alerts</Text>

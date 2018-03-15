@@ -165,13 +165,13 @@ export default {
   toolbarInputColor: platform === 'ios' ? '#CECDD2' : '#ffffff',
   searchBarHeight: platform === 'ios' ? 30 : 40,
   searchBarInputHeight: platform === 'ios' ? 30 : 50,
-  toolbarInverseBg: '#222',
+  toolbarInverseBg: '#fff',
   toolbarTextColor: '#ffffff',
   iosStatusbar: 'light-content',
   toolbarDefaultBorder: '#257985',
   get statusBarColor() {
     return color(this.toolbarDefaultBg)
-      .darken(0.2)
+      //.darken(0.2)
       .hexString();
   },
 
@@ -274,7 +274,7 @@ export default {
 
   get darkenHeader() {
     return color(this.tabBgColor)
-      .darken(0.03)
+      //.darken(0.03)
       .hexString();
   },
 

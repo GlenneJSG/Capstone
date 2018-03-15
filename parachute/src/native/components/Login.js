@@ -1,11 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Container, Content, Form, Item, Label, Input, Text, Button } from 'native-base';
+import { Container, Content, Item, Label, Input, Text, Button } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import Loading from './Loading';
 import Messages from './Messages';
 import Header from './Header';
 import Spacer from './Spacer';
+import Wallpaper from './Wallpaper';
+import Logo from './Logo';
+import Form from './Form';
+import SignupSection from './SignupSection'
+import ButtonSubmit from './ButtonSubmit'
 
 class Login extends React.Component {
   static propTypes = {
@@ -53,40 +58,12 @@ class Login extends React.Component {
     if (loading) return <Loading />;
 
     return (
-      <Container>
-        <Content padder>
-          <Header
-            title="Log In"
-          />
-
-          {error && <Messages message={error} />}
-/*Log in Functions*/
-          <Form>
-            <Item stackedLabel>
-              <Label>Email</Label>
-              <Input
-                autoCapitalize="none"
-                value={this.state.email}
-                keyboardType="email-address"
-                onChangeText={v => this.handleChange('email', v)}
-              />
-            </Item>
-            <Item stackedLabel>
-              <Label>Password</Label>
-              <Input
-                secureTextEntry
-                onChangeText={v => this.handleChange('password', v)}
-              />
-            </Item>
-
-            <Spacer size={20} />
-
-            <Button block onPress={this.handleSubmit}>
-              <Text>Login</Text>
-            </Button>
-          </Form>
-        </Content>
-      </Container>
+      <Wallpaper>
+        <Logo />
+        <Form />
+        <SignupSection/>
+<ButtonSubmit/>
+      </Wallpaper>
     );
   }
 }

@@ -1,23 +1,104 @@
 import React from 'react';
-import { Container, Content, Text, H1, H2, H3, Button } from 'native-base';
+import PropTypes from 'prop-types';
+import { Image } from 'react-native';
+import { Container, Content, Card, CardItem, Body, H3, List, ListItem, Text } from 'native-base';
+import ErrorMessages from '../../constants/errors';
+import Error from './Error';
 import Spacer from './Spacer';
 
-const About = () => (
-  <Container>
-    <Content padder>
-      <Spacer size={50} />
-      <H1>Welcome</H1>
-      <Spacer size={10} />
-      <Text>This is a prototype of our Capstone 4BI6 groups project.</Text>
+const AboutComponent= ({
+  error,
+  recipes,
+  recipeId,
+}) => {
+  // Error
+  if (error) return <Error content={error} />;
 
-      <Spacer size={50} />
-      <H2>Group Members</H2>
-      <Spacer size={10} />
-      <Text>Taylor de Vet, Glenne Grossman, Jamal Habash, Cameron Nowikow</Text>
+  // Get this Recipe from all recipes
+  let recipe = null;
+  if (recipeId && recipes) {
+    recipe = recipes.find(item => parseInt(item.id, 10) === parseInt(recipeId, 10));
+  }
+
+  // Recipe not found
+  if (!recipe) return <Error content={ErrorMessages.recipe404} />;
+
+  // Build Ingredients listing
+  const ingredients = recipe.ingredients.map(item => (
+    <ListItem key={item} rightIcon={{ style: { opacity: 0 } }}>
+      <Text>{item}</Text>
+    </ListItem>
+  ));
+
+  // Build Method listing
+  const method = recipe.method.map(item => (
+    <ListItem key={item} rightIcon={{ style: { opacity: 0 } }}>
+      <Text>{item}</Text>
+    </ListItem>
+  ));
+
+  return (
+    <Container>
+      <Content padder>
+        <Image source={{ uri: recipe.image }} style={{ height: 400, width: null, flex: 1 }} />
+
+        <Spacer size={25} />
+        <H3>{recipe.title}</H3>
+        <Text>{recipe.author}</Text>
+        <Spacer size={15} />
+
+        <Card>
+          <CardItem header bordered>
+            <Text>Alerts</Text>
+          </CardItem>
+          <CardItem>
+            <Body>
+              <Text>{recipe.body}</Text>
+            </Body>
+          </CardItem>
+        </Card>
 
 
-    </Content>
-  </Container>
-);
+        <Card>
+          <CardItem header bordered>
+            <Text>Medications</Text>
+          </CardItem>
+          <CardItem>
+            <Content>
+              <List>
+                {ingredients}
+              </List>
+            </Content>
+          </CardItem>
+        </Card>
 
-export default About;
+        <Card>
+          <CardItem header bordered>
+            <Text>Allergies</Text>
+          </CardItem>
+          <CardItem>
+            <List>
+              {method}
+            </List>
+          </CardItem>
+        </Card>
+
+
+
+        <Spacer size={20} />
+      </Content>
+    </Container>
+  );
+};
+
+AboutComponent.propTypes = {
+  error: PropTypes.string,
+  recipeId: PropTypes.string.isRequired,
+  recipes: PropTypes.arrayOf(PropTypes.shape()).isRequired,
+};
+
+AboutComponent.defaultProps = {
+  error: null,
+};
+
+export default AboutComponent;
