@@ -21,7 +21,10 @@ export default class UserInput extends Component {
 					autoCapitalize={this.props.autoCapitalize}
 					returnKeyType={this.props.returnKeyType}
 					placeholderTextColor='white'
-					underlineColorAndroid='transparent' />
+					underlineColorAndroid='transparent'
+					 />
+
+	
 			</View>
 		);
 	}
@@ -34,6 +37,7 @@ UserInput.propTypes = {
 	autoCorrect: PropTypes.bool,
 	autoCapitalize: PropTypes.string,
 	returnKeyType: PropTypes.string,
+
 };
 
 const DEVICE_WIDTH = Dimensions.get('window').width;

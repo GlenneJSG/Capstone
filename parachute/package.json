@@ -64,13 +64,17 @@
     "react": "^16.0.0",
     "react-dom": "^16.2.0",
     "react-native": "^0.50.4",
+    "react-native-alert-input": "^1.0.5",
+    "react-native-prompt": "^1.0.0",
     "react-native-router-flux": "^4.0.0-beta.24",
+    "react-native-ui-kitten": "^3.0.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "reactstrap": "^5.0.0-alpha.4",
     "redux": "^3.7.2",
     "redux-persist": "^5.4.0",
     "redux-thunk": "^2.2.0",
+    "rn-prompt": "^1.0.2",
     "superagent": "^3.8.1"
   }
 }

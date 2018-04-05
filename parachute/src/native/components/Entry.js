@@ -2,19 +2,21 @@ import Wallpaper from './Wallpaper';
 import React, {Component} from 'React';
 import PropTypes from 'prop-types';
 import Logo from './Logo';
-import Form from './Form';
+import LoggingIn from './Form';
 import ButtonSubmit from './ButtonSubmit';
 import SignupSection from './SignupSection';
+import Login from './Login';
 
 
 export default class Entry extends Component {
-	render() {
+
+	render(){
 		return (
 			<Wallpaper>
 				<Logo />
-				<Form />
-				<SignupSection/>
-				<ButtonSubmit/>
+				<Login />
+				<SignupSection />
+				<ButtonSubmit />
 			</Wallpaper>
 		);
 	}

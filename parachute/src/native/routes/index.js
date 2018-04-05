@@ -7,28 +7,18 @@ import DefaultProps from '../constants/navigation';
 import AppConfig from '../../constants/config';
 
 import RecipeContainer from '../../containers/Recipes';
-import RecipeComponent from '../components/Recipes';
+
 import RecipeViewComponent from '../components/Recipe';
 
-import SignUpContainer from '../../containers/SignUp';
-import SignUpComponent from '../components/SignUp';
-
-import LoginContainer from '../../containers/Login';
-import LoginComponent from '../components/Login';
-
-import ForgotPasswordContainer from '../../containers/ForgotPassword';
-import ForgotPasswordComponent from '../components/ForgotPassword';
-
-import UpdateProfileContainer from '../../containers/UpdateProfile';
-import UpdateProfileComponent from '../components/UpdateProfile';
 
 import AppContainer from '../../containers/App';
-import ProfileComponent from '../components/Profile';
-
-import AboutComponent from '../components/About';
-
+import LoginContainer from '../../containers/Login'
+import LoginComponent from '../components/Entry'
+import Menu from '../components/Menu'
 
 import CameraContainer from '../../containers/Camera';
+
+import ManualEntry from '../components/ManualEntry'
 
 const Index = (
   <Stack>
@@ -42,40 +32,38 @@ const Index = (
         <Scene key="profileHome" component={LoginContainer}
         hideNavBar={true}
         Layout={LoginComponent} />
-        <Scene
-          back
-          key="signUp"
-          title="SIGN UP"
-          {...DefaultProps.navbarProps}
-          component={SignUpContainer}
-          Layout={SignUpComponent}
-        />
-      
-        <Scene
-          back
-          key="forgotPassword"
-          title="FORGOT PASSWORD"
-          {...DefaultProps.navbarProps}
-          component={ForgotPasswordContainer}
-          Layout={ForgotPasswordComponent}
-        />
-        <Scene
-          back
-          key="updateProfile"
-          title="UPDATE PROFILE"
-          {...DefaultProps.navbarProps}
-          component={UpdateProfileContainer}
-          Layout={UpdateProfileComponent}
-        />
+
+
+
       </Stack>
       <Stack
         key="camera"
+        hideNavBar={true}
         title="Scan"
         icon={() => <Icon name="planet" {...DefaultProps.icons} />}
         {...DefaultProps.navbarProps}
       >
       <Scene key="group" component={CameraContainer} />
     </Stack>
+    <Stack
+      key="menu"
+      hideNavBar={true}
+      title="Scan"
+      icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+      {...DefaultProps.navbarProps}
+    >
+    <Scene key="group" component={Menu} />
+  </Stack>
+  <Stack
+    key="ManualEntry"
+    hideNavBar={true}
+    title="Scan"
+    icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+    {...DefaultProps.navbarProps}
+  >
+  <Scene key="group" component={ManualEntry} />
+</Stack>
+
 
     </Scene>
 
@@ -83,6 +71,7 @@ const Index = (
       back
       clone
       key="recipe"
+      hideNavBar={true}
       title="Patients"
       {...DefaultProps.navbarProps}
       component={RecipeContainer}
