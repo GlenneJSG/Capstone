@@ -1,12 +1,12 @@
 
 \section{Software Design Component}
 
-The software system we are designing will function as an information access portal (IAP) to Ontario's Electronic Health Record infrastructure. The main user of the system will be paramedics. Specifically, we plan to develop an application for use on both iOS and Android devices, that will allow paramedics to view a patients medical information. The information provided includes data such as allergies, medications and conditions that are useful to know in the case of an emergency. In the future, we hope the app can be extended to all areas of the medical profession as well as the general public.
+The software system we designed functions as an information access portal (IAP) to Ontario's Electronic Health Record infrastructure. The system is intended to be used by paramedics and other EFRs. Specifically, we developed an application for use on both iOS and Android devices, that allows paramedics to view a patients medical information. The information provided includes data such as allergies, medications and conditions that are useful to know in the case of an emergency. In the future, we hope the app can be extended to all areas of the medical profession as well as the general public.
 
-It is important to note that we are not focused on acquiring medical information, as it will be available and stored by the province through the future EHR system. The focus of our software will be to access, process and present this information to a user.
+It is important to note that the software is not focused on acquiring medical information, as in the future, a patients full medical history will be available and stored by the province through the future EHR system. The focus of our software is on accessing, processing and presenting medical information to a user.
 
 \subsection{Software Technology}
-In regards to application software, we will use the React Native Javascript framework to develop an Android, and iOS application concurrently. Additionally, the app will require a database to store patient information. For this, we plan on using Node.js to develop software that can access and process data from a MongoDB document database. The system will be modifiable, and compatible with accessing and retrieving information from Ontario's future EHR system.
+In regards to application software, we used the React Native Javascript framework to develop an Android, iOS and Web Application concurrently. In addition, we used Firebase, a databasing platform, to access and store mock health records, simulating Ontario's future EHR system. The software we developed is based on eHealth Ontario's EHR blueprint, and is fully compatible with Ontario's future EHR system.
 
 \subsection{Functional Design}
 
