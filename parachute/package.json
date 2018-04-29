@@ -1,6 +1,6 @@
 {
   "name": "rnsk",
-  "homepage": "http://react-boilerplate.mcnam.ee/",
+  "homepage": "https://github.com/GlenneJSG/Capstone",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -56,24 +56,33 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.5.1",
+<<<<<<< HEAD
     "expo": "^22.0.2",
     "express": "^4.6.1",
     "firebase": "^4.8.2",
+=======
+    "expo": "^23.0.6",
+    "firebase": "^4.8.0",
+>>>>>>> 9cec6b78e16a0a241e303f5b9fd590bad8081ad7
     "morgan": "^1.9.0",
     "native-base": "^2.3.6",
     "npm": "^4.6.1",
     "object-assign": "^4.1.1",
     "prop-types": "^15.6.0",
-    "react": "^16.0.0-beta.5",
+    "react": "^16.0.0",
     "react-dom": "^16.2.0",
-    "react-native": "^0.49.5",
+    "react-native": "^0.50.4",
+    "react-native-alert-input": "^1.0.5",
+    "react-native-prompt": "^1.0.0",
     "react-native-router-flux": "^4.0.0-beta.24",
+    "react-native-ui-kitten": "^3.0.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
     "reactstrap": "^5.0.0-alpha.4",
     "redux": "^3.7.2",
     "redux-persist": "^5.4.0",
     "redux-thunk": "^2.2.0",
+    "rn-prompt": "^1.0.2",
     "superagent": "^3.8.1"
   }
 }

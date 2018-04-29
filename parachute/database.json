@@ -1,0 +1,93 @@
+{
+  "meals" : [ {
+    "id" : 1,
+    "title" : "Lunch"
+  }, {
+    "id" : 2,
+    "title" : "Dinner"
+  } ],
+  "recipes" : [ {
+    "author" : "Female - 27",
+    "body" : "Highly Allergic to Peanuts",
+    "category" : 1,
+    "id" : 1,
+    "image" : "http://coolspotters.com/files/photos/2709/jane-smith-profile.png",
+    "ingredients" : [ "81mg Aspirin twice daily 7 days (Ends 30/03/18) " ],
+    "method" : [ "Peanuts", "Shellfish", "Cantelope" ],
+    "alert1" : "Highly Allergic to Peanuts",
+    "alert2" : "Prone to Fainting",
+    "alert3" : "Doctor's Visit: Prescribed Daily Aspirin",
+
+
+
+
+    "slug" : "jane-smith",
+    "title" : "Jane Smith"
+  }, {
+    "author" : "Female - 22",
+    "body" : "No Medical Alerts",
+    "category" : 1,
+    "dobday" : 7,
+    "dobmonth" : 2,
+    "dobyear" : 1996,
+    "id" : 3896287574,
+    "image" : "https://pbs.twimg.com/profile_images/922565154297954305/3ZQWkskc_400x400.jpg",
+    "ingredients" : [ "No Medications" ],
+    "method" : [ "No Allergies" ],
+    "slug" : "glenne-grossman",
+    "title" : "Glenne Grossman"
+  }, {
+    "author" : "Female - 53",
+    "body" : "No Medical Alerts",
+    "category" : 1,
+    "dobday" : 7,
+    "dobmonth" : 2,
+    "dobyear" : 1996,
+    "id" : 4191103938,
+    "image" : "https://pbs.twimg.com/profile_images/922565154297954305/3ZQWkskc_400x400.jpg",
+    "ingredients" : [ "No Medications" ],
+    "method" : [ "No Allergies" ],
+    "slug" : "lisa-grossman",
+    "title" : "Lisa Grossman"
+  }, {
+    "author" : "Male - 22",
+    "body" : "No Medical Alerts",
+    "category" : 1,
+    "dobday" : 7,
+    "dobmonth" : 2,
+    "dobyear" : 1996,
+    "id" : 4567496791,
+    "image" : "https://avatars3.githubusercontent.com/u/8096816?s=400&v=4",
+    "ingredients" : [ "No Medications" ],
+    "method" : [ "No Allergies" ],
+    "slug" : "andrew-berriault",
+    "title" : "Andrew Berriualt"
+  }, {
+    "author" : "Male - 23",
+    "body" : "Elevated Lever Enzymes, Childhood Asthma",
+    "category" : 1,
+    "id" : 4400203974,
+    "image" : "https://pbs.twimg.com/profile_images/582919259715739648/2qNzDeRz.png",
+    "ingredients" : [ "500mg Clarithromycin twice daily 7 days (Ends 30/03/18) " ],
+    "method" : [ "Seasonal Allergies" ],
+    "slug" : "john-smith",
+    "title" : "John Smith"
+  }, {
+    "author" : "Male - 31",
+    "body" : "Perfect in every way",
+    "category" : 2,
+    "id" : 0,
+    "image" : "https://bamfstyle.files.wordpress.com/2017/02/smithpittblack-crop.jpg",
+    "ingredients" : [ "sed do eiusmod tempor incididunt" ],
+    "method" : [ "iste natus error sit voluptatem accusantium doloremque laudantium" ],
+    "slug" : "john-smith",
+    "title" : "John Smith"
+  } ],
+  "users" : {
+    "e1PHlziPvBRh9OHKkoI5b76U0xM2" : {
+      "firstName" : "Glenne",
+      "lastLoggedIn" : 1520609496509,
+      "lastName" : "Grossman"
+    }
+  }
+}

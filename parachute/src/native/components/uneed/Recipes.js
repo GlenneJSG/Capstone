@@ -22,14 +22,15 @@ const RecipeListing = ({
 
   const keyExtractor = item => item.id;
 
+//goes to recipe page that matches the correct id
   const onPress = item => Actions.recipe({ match: { params: { id: String(item.id) } } });
 
   return (
     <Container>
       <Content padder>
         <Header
-          title="Current Patients"
-          content="This is here to show how you can read and display data from a data source (in our case, Firebase)."
+          title="All Patients"
+        //  content="This is here to show how you can read and display data from a data source (in our case, Firebase)."
         />
 
         <FlatList
@@ -61,7 +62,7 @@ const RecipeListing = ({
                     small
                     onPress={() => onPress(item)}
                   >
-                    <Text>Enter Patient Page</Text>
+                    <Text>Enter Page</Text>
                   </Button>
                   <Spacer size={5} />
                 </Body>

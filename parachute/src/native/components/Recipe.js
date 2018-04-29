@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Image } from 'react-native';
-import { Container, Content, Card, CardItem, Body, H3, List, ListItem, Text } from 'native-base';
+import { Image, StyleSheet } from 'react-native';
+import { Container, Content, Card, CardItem, Body, H3, List, ListItem, Text, View } from 'native-base';
 import ErrorMessages from '../../constants/errors';
 import Error from './Error';
 import Spacer from './Spacer';
+import PatientHeader from './PatientHeader'
+import MyWeb from './MyWeb'
+import Wallpaper from './Wallpaper'
 
 const RecipeView = ({
   error,
@@ -38,29 +41,50 @@ const RecipeView = ({
   ));
 
   return (
+
     <Container>
       <Content padder>
-        <Image source={{ uri: recipe.image }} style={{ height: 100, width: null, flex: 1 }} />
-
+<View style ={{flexDirection: 'row'}}>
+        <Image source={{ uri: recipe.image }} style={{ height: 200, width: 200, flex: 1, resizeMode: 'contain'}} />
+        <MyWeb />
+        </View>
         <Spacer size={25} />
         <H3>{recipe.title}</H3>
-        <Text>by {recipe.author}</Text>
+        <Text>{recipe.author}</Text>
         <Spacer size={15} />
+
+        <View style={styles.rowFlex}>
+
+        <View style={styles.circle} >
+          <Text style={{color: 'white'}}> recipe.alert1 </Text>
+
+        </View>
+        <View style={styles.circle} >
+          <Text style={{color: 'white'}}> recipe.alert2</Text>
+
+        </View>
+        <View style={styles.circle} >
+
+          <Text style={{color: 'white'}}> recipe.alert3 </Text>
+        </View>
+        </View>
 
         <Card>
           <CardItem header bordered>
-            <Text>About this recipe</Text>
+            <Text>Alerts</Text>
           </CardItem>
           <CardItem>
             <Body>
-              <Text>{recipe.body}</Text>
+
+              <Text >{recipe.body}</Text>
+
             </Body>
           </CardItem>
         </Card>
 
         <Card>
           <CardItem header bordered>
-            <Text>Ingredients</Text>
+            <Text>Medications</Text>
           </CardItem>
           <CardItem>
             <Content>
@@ -73,7 +97,7 @@ const RecipeView = ({
 
         <Card>
           <CardItem header bordered>
-            <Text>Method</Text>
+            <Text>Allergies</Text>
           </CardItem>
           <CardItem>
             <List>
@@ -82,9 +106,22 @@ const RecipeView = ({
           </CardItem>
         </Card>
 
+        <Card>
+          <CardItem header bordered>
+            <Text>Health Card Number</Text>
+          </CardItem>
+          <CardItem>
+            <Body>
+              <Text>{recipe.id}</Text>
+            </Body>
+          </CardItem>
+        </Card>
+
+
         <Spacer size={20} />
       </Content>
     </Container>
+
   );
 };
 
@@ -97,5 +134,36 @@ RecipeView.propTypes = {
 RecipeView.defaultProps = {
   error: null,
 };
+
+
+
+const styles = StyleSheet.create({
+circle: {
+    width: 100,
+    height: 100,
+    borderRadius: 100/2,
+    backgroundColor: '#FF4447',
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20
+
+},
+rowFlex:{
+  flexDirection: 'row',
+  flex: 1,
+
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    padding: 20
+
+},
+
+});
+
+
+
+
+
+
 
 export default RecipeView;

@@ -15,7 +15,7 @@ export default {
   missingPassword: 'Password is missing',
   passwordsDontMatch: 'Passwords do not match',
 
-  // Recipes
-  recipe404: 'Recipe not found',
+  // EMRs
+  recipe404: 'Patient not found, a profile had not been created for this Health Card Number',
   missingMealId: 'Missing meal definition',
 };

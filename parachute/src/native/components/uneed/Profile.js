@@ -1,12 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { View } from 'react-native';
+import { View, Image } from 'react-native';
 import { Container, Content, List, ListItem, Body, Left, Text, Icon } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import Header from './Header';
+import Wallpaper from './Wallpaper';
+
 
 const Profile = ({ member, logout }) => (
-  <Container>
+  <Wallpaper>
     <Content>
       <List>
         {(member && member.email) ?
@@ -18,18 +20,26 @@ const Profile = ({ member, logout }) => (
               />
             </Content>
 
-            <ListItem onPress={Actions.updateProfile} icon>
-              <Left>
-                <Icon name="person-add" />
-              </Left>
+
+              <ListItem onPress={Actions.camera} icon>
+                <Left>
+
+                </Left>
+                <Body>
+                  <Text>View Patient</Text>
+                </Body>
+              </ListItem>
+              <ListItem onPress={Actions.updateProfile} icon>
+                <Left>
+                </Left>
               <Body>
                 <Text>Update My Profile</Text>
               </Body>
             </ListItem>
+
             <ListItem onPress={logout} icon>
-              <Left>
-                <Icon name="power" />
-              </Left>
+            <Left>
+            </Left>
               <Body>
                 <Text>Logout</Text>
               </Body>
@@ -39,8 +49,7 @@ const Profile = ({ member, logout }) => (
           <View>
             <Content padder>
               <Header
-                title="Hi there,"
-                content="Please login to gain extra access"
+                title="Sign In"
               />
             </Content>
 
@@ -72,7 +81,7 @@ const Profile = ({ member, logout }) => (
         }
       </List>
     </Content>
-  </Container>
+  </Wallpaper>
 );
 
 Profile.propTypes = {

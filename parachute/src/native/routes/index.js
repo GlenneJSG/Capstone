@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Scene, Tabs, Stack } from 'react-native-router-flux';
 import { Icon } from 'native-base';
@@ -5,115 +6,75 @@ import { Icon } from 'native-base';
 import DefaultProps from '../constants/navigation';
 import AppConfig from '../../constants/config';
 
-import RecipesContainer from '../../containers/Recipes';
-import RecipesComponent from '../components/Recipes';
+import RecipeContainer from '../../containers/Recipes';
+
 import RecipeViewComponent from '../components/Recipe';
 
-import SignUpContainer from '../../containers/SignUp';
-import SignUpComponent from '../components/SignUp';
-
-import LoginContainer from '../../containers/Login';
-import LoginComponent from '../components/Login';
-
-import ForgotPasswordContainer from '../../containers/ForgotPassword';
-import ForgotPasswordComponent from '../components/ForgotPassword';
-
-import UpdateProfileContainer from '../../containers/UpdateProfile';
-import UpdateProfileComponent from '../components/UpdateProfile';
 
 import AppContainer from '../../containers/App';
-import ProfileComponent from '../components/Profile';
+import LoginContainer from '../../containers/Login'
+import LoginComponent from '../components/Entry'
+import Menu from '../components/Menu'
 
-import AboutComponent from '../components/About';
+import CameraContainer from '../../containers/Camera';
+
+import ManualEntry from '../components/ManualEntry'
 
 const Index = (
   <Stack>
     <Scene hideNavBar>
-      <Tabs
-        key="tabbar"
-        swipeEnabled
-        type="replace"
-        showLabel={false}
-        {...DefaultProps.tabProps}
+
+      <Stack
+        key="login"
+        title="LOGIN"
+        {...DefaultProps.navbarProps}
       >
-        <Stack
-          key="home"
-          title={AppConfig.appName.toUpperCase()}
-          icon={() => <Icon name="help" {...DefaultProps.icons} />}
-          {...DefaultProps.navbarProps}
-        >
-          <Scene key="group" component={AboutComponent} />
-        </Stack>
+        <Scene key="profileHome" component={LoginContainer}
+        hideNavBar={true}
+        Layout={LoginComponent} />
 
 
-        <Stack
-          key="banana"
-          title="banana"
-          icon={() => <Icon name="person" {...DefaultProps.icons} />}
-          {...DefaultProps.navbarProps}
-        >
-          <Scene key="recipes" component={RecipesContainer} Layout={RecipesComponent} />
-        </Stack>
 
-        <Stack
-          key="camera"
-          title="Camera"
-          icon={() => <Icon name="camera" {...DefaultProps.icons} />}
-          {...DefaultProps.navbarProps}
-        >
-        <Scene key="group" component={AboutComponent} />
       </Stack>
+      <Stack
+        key="camera"
+        hideNavBar={true}
+        title="Scan"
+        icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+        {...DefaultProps.navbarProps}
+      >
+      <Scene key="group" component={CameraContainer} />
+    </Stack>
+    <Stack
+      key="menu"
+      hideNavBar={true}
+      title="Scan"
+      icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+      {...DefaultProps.navbarProps}
+    >
+    <Scene key="group" component={Menu} />
+  </Stack>
+  <Stack
+    key="ManualEntry"
+    hideNavBar={true}
+    title="Scan"
+    icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+    {...DefaultProps.navbarProps}
+  >
+  <Scene key="group" component={ManualEntry} />
+</Stack>
 
-        <Stack
-          key="profile"
-          title="PROFILE"
-          icon={() => <Icon name="person" {...DefaultProps.icons} />}
-          {...DefaultProps.navbarProps}
-        >
-          <Scene key="profileHome" component={AppContainer} Layout={ProfileComponent} />
-          <Scene
-            back
-            key="signUp"
-            title="SIGN UP"
-            {...DefaultProps.navbarProps}
-            component={SignUpContainer}
-            Layout={SignUpComponent}
-          />
-          <Scene
-            back
-            key="login"
-            title="LOGIN"
-            {...DefaultProps.navbarProps}
-            component={LoginContainer}
-            Layout={LoginComponent}
-          />
-          <Scene
-            back
-            key="forgotPassword"
-            title="FORGOT PASSWORD"
-            {...DefaultProps.navbarProps}
-            component={ForgotPasswordContainer}
-            Layout={ForgotPasswordComponent}
-          />
-          <Scene
-            back
-            key="updateProfile"
-            title="UPDATE PROFILE"
-            {...DefaultProps.navbarProps}
-            component={UpdateProfileContainer}
-            Layout={UpdateProfileComponent}
-          />
-        </Stack>
-      </Tabs>
+
     </Scene>
 
     <Scene
       back
       clone
-      key="patients"
+      key="recipe"
+      hideNavBar={true}
       title="Patients"
       {...DefaultProps.navbarProps}
-      component={RecipesContainer}
+      component={RecipeContainer}
       Layout={RecipeViewComponent}
     />
   </Stack>
