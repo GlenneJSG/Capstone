@@ -56,31 +56,20 @@ const RecipeView = ({
         <View style={styles.rowFlex}>
 
         <View style={styles.circle} >
-          <Text style={{color: 'white'}}> recipe.alert1 </Text>
+          <Text style={{color: 'white'}}> {recipe.alert1} </Text>
 
         </View>
         <View style={styles.circle} >
-          <Text style={{color: 'white'}}> recipe.alert2</Text>
+          <Text style={{color: 'white'}}> {recipe.alert2}</Text>
 
         </View>
         <View style={styles.circle} >
 
-          <Text style={{color: 'white'}}> recipe.alert3 </Text>
+          <Text style={{color: 'white'}}> {recipe.alert3 }</Text>
         </View>
         </View>
 
-        <Card>
-          <CardItem header bordered>
-            <Text>Alerts</Text>
-          </CardItem>
-          <CardItem>
-            <Body>
 
-              <Text >{recipe.body}</Text>
-
-            </Body>
-          </CardItem>
-        </Card>
 
         <Card>
           <CardItem header bordered>
@@ -105,6 +94,40 @@ const RecipeView = ({
             </List>
           </CardItem>
         </Card>
+        <Card>
+          <CardItem header bordered>
+            <Text>Additional Information</Text>
+          </CardItem>
+          <CardItem>
+            <Body>
+
+              <Text >{recipe.body}</Text>
+
+            </Body>
+          </CardItem>
+        </Card>
+        <Card>
+          <CardItem header bordered>
+            <Text>Date of Birth</Text>
+          </CardItem>
+          <CardItem>
+            <List>
+              <Text >{recipe.dob}</Text>
+            </List>
+          </CardItem>
+        </Card>
+
+        <Card>
+          <CardItem header bordered>
+            <Text>Address</Text>
+          </CardItem>
+          <CardItem>
+            <List>
+              <Text >{recipe.address}</Text>
+            </List>
+          </CardItem>
+        </Card>
+
 
         <Card>
           <CardItem header bordered>
@@ -116,7 +139,6 @@ const RecipeView = ({
             </Body>
           </CardItem>
         </Card>
-
 
         <Spacer size={20} />
       </Content>

@@ -16,7 +16,9 @@
     "method" : [ "Peanuts", "Shellfish", "Cantelope" ],
     "alert1" : "Highly Allergic to Peanuts",
     "alert2" : "Prone to Fainting",
-    "alert3" : "Doctor's Visit: Prescribed Daily Aspirin",
+    "alert3" : "Daily Aspirin",
+    "address": "1062 Main St West, Hamilton Ontario",
+    "dob": "January 1st, 2018",
 
 
 
@@ -34,8 +36,14 @@
     "image" : "https://pbs.twimg.com/profile_images/922565154297954305/3ZQWkskc_400x400.jpg",
     "ingredients" : [ "No Medications" ],
     "method" : [ "No Allergies" ],
+    "alert1" : "Highly Allergic to Peanuts",
+    "alert2" : "Prone to Fainting",
+    "alert3" : "Daily Aspirin",
+    "address": "1062 Main St West, Hamilton Ontario",
+    "dob": "January 1st, 2018",
     "slug" : "glenne-grossman",
     "title" : "Glenne Grossman"
+
   }, {
     "author" : "Female - 53",
     "body" : "No Medical Alerts",
@@ -47,6 +55,11 @@
     "image" : "https://pbs.twimg.com/profile_images/922565154297954305/3ZQWkskc_400x400.jpg",
     "ingredients" : [ "No Medications" ],
     "method" : [ "No Allergies" ],
+    "alert1" : "Highly Allergic to Peanuts",
+    "alert2" : "Prone to Fainting",
+    "alert3" : "Daily Aspirin",
+    "address": "1062 Main St West, Hamilton Ontario",
+    "dob": "January 1st, 2018",
     "slug" : "lisa-grossman",
     "title" : "Lisa Grossman"
   }, {
@@ -60,6 +73,11 @@
     "image" : "https://avatars3.githubusercontent.com/u/8096816?s=400&v=4",
     "ingredients" : [ "No Medications" ],
     "method" : [ "No Allergies" ],
+    "alert1" : "Highly Allergic to Peanuts",
+    "alert2" : "Prone to Fainting",
+    "alert3" : "Daily Aspirin",
+    "address": "1062 Main St West, Hamilton Ontario",
+    "dob": "January 1st, 2018",
     "slug" : "andrew-berriault",
     "title" : "Andrew Berriualt"
   }, {
@@ -70,6 +88,11 @@
     "image" : "https://pbs.twimg.com/profile_images/582919259715739648/2qNzDeRz.png",
     "ingredients" : [ "500mg Clarithromycin twice daily 7 days (Ends 30/03/18) " ],
     "method" : [ "Seasonal Allergies" ],
+    "alert1" : "Highly Allergic to Peanuts",
+    "alert2" : "Prone to Fainting",
+    "alert3" : "Daily Aspirin",
+    "address": "1062 Main St West, Hamilton Ontario",
+    "dob": "January 1st, 2018",
     "slug" : "john-smith",
     "title" : "John Smith"
   }, {
@@ -80,6 +103,11 @@
     "image" : "https://bamfstyle.files.wordpress.com/2017/02/smithpittblack-crop.jpg",
     "ingredients" : [ "sed do eiusmod tempor incididunt" ],
     "method" : [ "iste natus error sit voluptatem accusantium doloremque laudantium" ],
+    "alert1" : "Highly Allergic to Peanuts",
+    "alert2" : "Prone to Fainting",
+    "alert3" : "Daily Aspirin",
+    "address": "1062 Main St West, Hamilton Ontario",
+    "dob": "January 1st, 2018",
     "slug" : "john-smith",
     "title" : "John Smith"
   } ],

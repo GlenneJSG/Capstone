@@ -9,7 +9,7 @@ export default class MyWeb extends React.Component {
       <View style={{ height: 200}}>
       <WebView
         scrollEnabled = {false}
-        source={{uri: 'http://172.20.10.11/'}}
+        source={{uri: 'http://172.20.10.2/'}}
         style={{height: 10, width: 200 }}
       />
       </View>

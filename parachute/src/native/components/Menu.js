@@ -54,11 +54,11 @@ const Menu = () => (
           {imageAndText(PatientPage, 'View an EHR')}
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => Actions.camera()}>
+      <TouchableOpacity onPress={() => Actions.Settings()}>
         {imageAndText(Settings, 'Settings')}
       </TouchableOpacity>
 
-      <TouchableOpacity onPress={() => Actions.camera()}>
+      <TouchableOpacity onPress={() => Actions.History()}>
         {imageAndText(History, 'History')}
       </TouchableOpacity>
 

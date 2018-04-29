@@ -18,7 +18,9 @@ import Menu from '../components/Menu'
 
 import CameraContainer from '../../containers/Camera';
 
-import ManualEntry from '../components/ManualEntry'
+import ManualEntry from '../components/ManualEntry';
+import Settings from '../components/Settings';
+import History from '../components/History';
 
 const Index = (
   <Stack>
@@ -63,7 +65,24 @@ const Index = (
   >
   <Scene key="group" component={ManualEntry} />
 </Stack>
-
+<Stack
+  key="Settings"
+  hideNavBar={true}
+  title="Scan"
+  icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+  {...DefaultProps.navbarProps}
+>
+<Scene key="group" component={Settings} />
+</Stack>
+<Stack
+  key="History"
+  hideNavBar={true}
+  title="Scan"
+  icon={() => <Icon name="planet" {...DefaultProps.icons} />}
+  {...DefaultProps.navbarProps}
+>
+<Scene key="group" component={History} />
+</Stack>
 
     </Scene>
 

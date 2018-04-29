@@ -38,6 +38,11 @@ export default function recipeReducer(state = initialState, action) {
           author: item.author,
           ingredients: item.ingredients,
           method: item.method,
+          alert1: item.alert1,
+          alert2: item.alert2,
+          alert3: item.alert3,
+          address: item.address,
+          dob: item.dob,
         }));
       }
 
